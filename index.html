@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrategias Efectivas para Comunicar Hallazgos en Proyectos Informáticos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .meta {
+            color: #a8c5f0;
+            font-size: 0.95em;
+            margin-top: 10px;
+        }
+
+        .meta span {
+            margin: 0 10px;
+        }
+
+        article {
+            padding: 50px 40px;
+        }
+
+        h2 {
+            color: #1e3c72;
+            font-size: 1.9em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        h3 {
+            color: #2a5298;
+            font-size: 1.4em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.05em;
+            text-align: justify;
+        }
+
+        .intro {
+            font-size: 1.15em;
+            font-weight: 500;
+            color: #555;
+            border-left: 4px solid #667eea;
+            padding-left: 20px;
+            margin: 30px 0;
+            background: #f8f9ff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            border-left: 5px solid #667eea;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+
+        .highlight-box h3 {
+            margin-top: 0;
+            color: #667eea;
+        }
+
+        ul, ol {
+            margin: 20px 0 20px 40px;
+        }
+
+        li {
+            margin-bottom: 12px;
+            font-size: 1.05em;
+        }
+
+        .strategy-card {
+            background: #f8f9ff;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 25px 0;
+            border: 2px solid #e0e6ff;
+            transition: all 0.3s ease;
+        }
+
+        .strategy-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.2);
+            border-color: #667eea;
+        }
+
+        .strategy-card h3 {
+            color: #667eea;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .icon {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: #667eea;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 15px;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            font-size: 0.95em;
+            opacity: 0.9;
+        }
+
+        .image-container {
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .caption {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        blockquote {
+            border-left: 5px solid #667eea;
+            margin: 30px 0;
+            padding: 20px 30px;
+            background: #f8f9ff;
+            font-style: italic;
+            color: #555;
+            border-radius: 5px;
+        }
+
+        blockquote cite {
+            display: block;
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #888;
+            font-style: normal;
+        }
+
+        .references {
+            background: #f5f5f5;
+            padding: 30px;
+            margin-top: 50px;
+            border-radius: 10px;
+            border-top: 4px solid #667eea;
+        }
+
+        .references h2 {
+            border-bottom: none;
+            margin-top: 0;
+        }
+
+        .references ol {
+            margin-left: 20px;
+        }
+
+        .references li {
+            font-size: 0.95em;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background: #1e3c72;
+            color: white;
+            padding: 30px 40px;
+            text-align: center;
+        }
+
+        .author-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .avatar {
+            width: 60px;
+            height: 60px;
+            background: #667eea;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .cta-box h3 {
+            color: white;
+            margin-top: 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            header {
+                padding: 40px 20px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            article {
+                padding: 30px 20px;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .author-info {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Estrategias Efectivas para Comunicar Hallazgos en Proyectos Informáticos</h1>
+            <h3>Por Engel A. Gil Mejía – Octubre 2025</h3>
+            <div class="meta">
+                <span>📅 Octubre 28, 2025</span>
+                <span>⏱️ 8 min de lectura</span>
+                <span>🏷️ Gestión de Proyectos Informáticos</span>
+            </div>
+        </header>
+
+        <article>
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop" alt="Equipo colaborando en proyecto tecnológico">
+                <p class="caption">La comunicación efectiva es la base del éxito en proyectos informáticos</p>
+            </div>
+
+            <p class="intro">
+                En el ecosistema tecnológico actual, el éxito de un proyecto informático no solo depende de la calidad técnica de su implementación, sino también de la capacidad del equipo para comunicar efectivamente sus hallazgos, decisiones y resultados. La comunicación estratégica se ha convertido en una competencia fundamental que determina el impacto, la adopción y la sostenibilidad de las soluciones tecnológicas.
+            </p>
+
+            <h2>El Desafío de la Comunicación Técnica</h2>
+
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1200&h=500&fit=crop" alt="Desarrolladores trabajando en equipo">
+                <p class="caption">Los equipos multidisciplinarios requieren estrategias de comunicación adaptadas a diferentes niveles de expertise</p>
+            </div>
+            
+            <p>
+                Los proyectos informáticos generan constantemente hallazgos valiosos: desde métricas de rendimiento y análisis de vulnerabilidades hasta evaluaciones de arquitecturas y lecciones aprendidas. Sin embargo, según el Project Management Institute (2023), el 56% de los proyectos tecnológicos fracasan o no alcanzan sus objetivos primarios debido a problemas de comunicación, no por deficiencias técnicas. Esta estadística revela una brecha crítica entre el conocimiento técnico generado y su transmisión efectiva a stakeholders relevantes.
+            </p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number">56%</span>
+                    <span class="stat-label">Proyectos fracasan por mala comunicación</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">70%</span>
+                    <span class="stat-label">Ejecutivos consideran comunicación como habilidad crítica</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">3x</span>
+                    <span class="stat-label">Mayor probabilidad de éxito con comunicación efectiva</span>
+                </div>
+            </div>
+
+            <p>
+                El desafío fundamental radica en que los hallazgos técnicos deben comunicarse a audiencias con diferentes niveles de expertise, intereses y capacidades de comprensión. Un director ejecutivo necesita entender el impacto estratégico y financiero, mientras que un equipo de desarrollo requiere detalles técnicos precisos. Esta multiplicidad de audiencias exige estrategias de comunicación adaptativas y deliberadas.
+            </p>
+
+            <h2>Estrategias Fundamentales de Comunicación</h2>
+
+            <div class="strategy-card">
+                <h3><span class="icon">1</span>Segmentación y Adaptación de Audiencias</h3>
+                <p>
+                    La primera estrategia esencial consiste en identificar claramente a quién se comunica y adaptar el mensaje en consecuencia. No existe una comunicación "talla única" efectiva en proyectos informáticos complejos.
+                </p>
+                <ul>
+                    <li><strong>Audiencia Ejecutiva:</strong> Enfoque en ROI, impacto estratégico, riesgos y oportunidades de negocio. Formato: dashboards ejecutivos, resúmenes de una página, presentaciones visuales de alto nivel.</li>
+                    <li><strong>Audiencia Técnica:</strong> Profundidad en arquitectura, código, métricas de rendimiento, decisiones de diseño. Formato: documentación técnica detallada, diagramas de arquitectura, análisis de código.</li>
+                    <li><strong>Audiencia Operativa:</strong> Impacto en procesos diarios, cambios en flujos de trabajo, capacitación requerida. Formato: guías paso a paso, videos tutoriales, sesiones de entrenamiento.</li>
+                    <li><strong>Audiencia Externa/Clientes:</strong> Beneficios, mejoras en experiencia de usuario, valor agregado. Formato: comunicados simples, infografías, demostraciones interactivas.</li>
+                </ul>
+            </div>
+
+            <div class="strategy-card">
+                <h3><span class="icon">2</span>Pirámide Invertida de Información</h3>
+                <p>
+                    Adoptada del periodismo, esta técnica coloca la información más crítica al inicio y desciende progresivamente hacia detalles específicos. En contexto de proyectos IT:
+                </p>
+                <ol>
+                    <li><strong>Resumen ejecutivo (primeros 30 segundos/100 palabras):</strong> ¿Qué descubrimos? ¿Por qué importa? ¿Qué recomendamos?</li>
+                    <li><strong>Contexto y metodología (siguiente minuto/300 palabras):</strong> ¿Cómo llegamos a estas conclusiones? ¿Qué datos respaldan los hallazgos?</li>
+                    <li><strong>Análisis detallado (profundización completa):</strong> Datos técnicos exhaustivos, métricas específicas, análisis comparativos.</li>
+                    <li><strong>Apéndices y recursos:</strong> Código fuente, logs completos, documentación técnica exhaustiva.</li>
+                </ol>
+                <p>
+                    Esta estructura permite que ejecutivos ocupados obtengan valor en 30 segundos, mientras que especialistas técnicos pueden profundizar hasta el nivel de detalle requerido.
+                </p>
+            </div>
+
+            <blockquote>
+                "La comunicación efectiva no se trata de decir todo lo que sabes, sino de decir exactamente lo que tu audiencia necesita saber en el momento en que lo necesita."
+                <cite>— Fred Brooks, autor de "The Mythical Man-Month"</cite>
+            </blockquote>
+
+            <div class="strategy-card">
+                <h3><span class="icon">3</span>Visualización de Datos y Conceptos Técnicos</h3>
+                
+                <div class="image-container">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1000&h=400&fit=crop" alt="Dashboard con visualización de datos">
+                    <p class="caption">Los dashboards y visualizaciones transforman datos complejos en insights accionables</p>
+                </div>
+                
+                <p>
+                    El cerebro humano procesa información visual 60,000 veces más rápido que texto. En proyectos informáticos, la visualización efectiva puede transformar datos complejos en insights accionables.
+                </p>
+                <p><strong>Técnicas de visualización efectivas:</strong></p>
+                <ul>
+                    <li><strong>Diagramas de arquitectura:</strong> Representan componentes de sistemas, integraciones y flujos de datos de manera comprensible visualmente.</li>
+                    <li><strong>Dashboards interactivos:</strong> Herramientas como Grafana o Kibana permiten exploración en tiempo real de métricas de rendimiento, logs y comportamiento de sistemas.</li>
+                    <li><strong>Infografías de hallazgos:</strong> Resumen estadísticas, comparativas y conclusiones clave en formato visualmente atractivo y compartible.</li>
+                    <li><strong>Diagramas de flujo de procesos:</strong> Ilustran workflows, pipelines de CI/CD y procesos de negocio afectados por cambios técnicos.</li>
+                    <li><strong>Gráficos comparativos:</strong> Tablas antes/después, benchmarks de rendimiento, análisis de alternativas técnicas.</li>
+                </ul>
+            </div>
+
+            <div class="highlight-box">
+                <h3>💡 Caso de Estudio: Netflix y la Comunicación de Migración a Microservicios</h3>
+                <p>
+                    Netflix es reconocido no solo por su arquitectura técnica innovadora, sino por cómo comunicó internamente su migración de monolito a microservicios. Utilizaron:
+                </p>
+                <ul>
+                    <li>Blog técnico público documentando cada fase de migración</li>
+                    <li>Presentaciones en conferencias explicando decisiones arquitectónicas</li>
+                    <li>Herramientas open source (Eureka, Hystrix) con documentación exhaustiva</li>
+                    <li>Métricas visualizadas en dashboards compartidos internamente</li>
+                </ul>
+                <p>
+                    Resultado: La comunidad global pudo replicar sus aprendizajes, posicionando a Netflix como líder técnico y atrayendo talento de élite.
+                </p>
+            </div>
+
+            <div class="strategy-card">
+                <h3><span class="icon">4</span>Documentación Continua y Accesible</h3>
+                
+                <div class="image-container">
+                    <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1000&h=400&fit=crop" alt="Código y documentación técnica">
+                    <p class="caption">La documentación como código permite versionar y mantener actualizado el conocimiento técnico</p>
+                </div>
+                
+                <p>
+                    La documentación no debe ser actividad final post-proyecto, sino práctica continua integrada en el flujo de trabajo. GitLab, empresa completamente remota con más de 1,000 empleados, opera bajo el principio "handbook-first": toda decisión, proceso o hallazgo se documenta inmediatamente en su handbook público.
+                </p>
+                <p><strong>Principios de documentación efectiva:</strong></p>
+                <ul>
+                    <li><strong>Documentación como código:</strong> Versionar documentación en Git junto al código, permitiendo rastrear evolución de decisiones.</li>
+                    <li><strong>Formato markdown:</strong> Simple, legible, fácil de editar, compatible con herramientas de generación de documentación estática.</li>
+                    <li><strong>Búsqueda y navegación intuitivas:</strong> Estructura jerárquica clara, índices, etiquetas y función de búsqueda robusta.</li>
+                    <li><strong>Ejemplos prácticos:</strong> Cada concepto explicado incluye ejemplos de código, configuraciones o casos de uso concretos.</li>
+                    <li><strong>Mantenimiento activo:</strong> Documentación obsoleta es peor que ninguna documentación. Establecer procesos de revisión y actualización regulares.</li>
+                </ul>
+            </div>
+
+            <div class="strategy-card">
+                <h3><span class="icon">5</span>Comunicación Asincrónica para Equipos Distribuidos</h3>
+                
+                <div class="image-container">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1000&h=400&fit=crop" alt="Trabajo remoto y comunicación digital">
+                    <p class="caption">La comunicación asincrónica permite colaboración efectiva independiente de zonas horarias</p>
+                </div>
+                
+                <p>
+                    Con la prevalencia del trabajo remoto e híbrido, la comunicación asincrónica se ha vuelto fundamental. Esta estrategia permite que hallazgos sean comunicados y consumidos independientemente de zonas horarias o horarios de trabajo.
+                </p>
+                <p><strong>Herramientas y prácticas:</strong></p>
+                <ul>
+                    <li><strong>RFCs (Request for Comments):</strong> Documentos escritos proponiendo cambios técnicos significativos, permitiendo feedback estructurado de todo el equipo.</li>
+                    <li><strong>ADRs (Architecture Decision Records):</strong> Registro histórico de decisiones arquitectónicas con contexto, alternativas consideradas y justificación de la decisión final.</li>
+                    <li><strong>Status updates escritos:</strong> Actualizaciones de progreso detalladas en formato texto que pueden revisarse en cualquier momento, reemplazando reuniones sincrónicas innecesarias.</li>
+                    <li><strong>Videos grabados con screencasts:</strong> Demostraciones de funcionalidades o explicaciones de conceptos complejos que pueden verse bajo demanda.</li>
+                    <li><strong>Slack/Discord threads organizados:</strong> Discusiones estructuradas por tema que mantienen contexto y son buscables históricamente.</li>
+                </ul>
+            </div>
+
+            <h2>El Rol de la Ética y Transparencia</h2>
+
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1000&h=400&fit=crop" alt="Concepto de ética y transparencia en negocios">
+                <p class="caption">La transparencia y honestidad son fundamentales en la comunicación de hallazgos técnicos</p>
+            </div>
+            
+            <p>
+                La comunicación de hallazgos en proyectos informáticos debe adherirse a principios éticos fundamentales. Según las directrices COPE (Committee on Publication Ethics), la transparencia y honestidad son imperativas incluso cuando los hallazgos no son favorables.
+            </p>
+
+            <div class="highlight-box">
+                <h3>🔒 Principios Éticos en la Comunicación de Hallazgos Técnicos</h3>
+                <ul>
+                    <li><strong>Honestidad total sobre limitaciones:</strong> Comunicar no solo éxitos sino también fracasos, deuda técnica incurrida, o trade-offs realizados.</li>
+                    <li><strong>Atribución apropiada:</strong> Reconocer contribuciones de miembros del equipo, herramientas de código abierto utilizadas, o investigaciones previas que informaron decisiones.</li>
+                    <li><strong>Privacidad y confidencialidad:</strong> Asegurar que datos sensibles de clientes o información propietaria no se divulguen inadvertidamente en comunicaciones técnicas.</li>
+                    <li><strong>Reproducibilidad:</strong> Proporcionar suficiente detalle para que otros equipos puedan replicar hallazgos o validar conclusiones.</li>
+                    <li><strong>Corrección de errores:</strong> Cuando se descubren errores en comunicaciones previas, corregirlos públicamente con la misma prominencia que la comunicación original.</li>
+                </ul>
+            </div>
+
+            <h2>Medición de Efectividad Comunicativa</h2>
+            
+            <p>
+                Como cualquier aspecto de gestión de proyectos, la efectividad de comunicación debe medirse cuantitativamente para permitir mejora continua.
+            </p>
+
+            <p><strong>Métricas clave:</strong></p>
+            <ul>
+                <li><strong>Tasa de lectura completa:</strong> Porcentaje de destinatarios que leen comunicaciones técnicas completamente (medible con analytics en documentación online).</li>
+                <li><strong>Tiempo hasta comprensión:</strong> ¿Cuánto tiempo toma a un nuevo miembro del equipo entender un concepto documentado?</li>
+                <li><strong>Preguntas repetitivas:</strong> Si las mismas preguntas surgen constantemente, indica que la comunicación inicial fue insuficiente o poco clara.</li>
+                <li><strong>Tasa de adopción:</strong> ¿Qué porcentaje de recomendaciones o mejores prácticas comunicadas son realmente implementadas?</li>
+                <li><strong>Feedback cualitativo:</strong> Encuestas breves pidiendo a audiencias calificar claridad, utilidad y completitud de comunicaciones.</li>
+            </ul>
+
+            <h2>Conclusión</h2>
+            
+            <p>
+                La comunicación efectiva de hallazgos en proyectos informáticos no es habilidad blanda opcional, sino competencia técnica fundamental que determina el impacto real de soluciones tecnológicas. Las estrategias presentadas—segmentación de audiencias, pirámide invertida de información, visualización de datos, documentación continua, y comunicación asincrónica—forman un framework integral que los equipos pueden adaptar a sus contextos específicos.
+            </p>
+
+            <p>
+                En una industria caracterizada por complejidad técnica creciente y equipos cada vez más distribuidos, la capacidad de transformar conocimiento técnico en comunicación clara y accionable representa ventaja competitiva sostenible. Los proyectos que priorizan comunicación estratégica no solo entregan software funcionalmente correcto, sino que también construyen conocimiento institucional, facilitan colaboración efectiva y maximizan el impacto organizacional de su trabajo técnico.
+            </p>
+
+            <p>
+                El futuro de la gestión de proyectos informáticos pertenece a profesionales que dominan tanto la excelencia técnica como la comunicación estratégica. Como dijo Peter Drucker: "Lo más importante en comunicación es escuchar lo que no se dice." En proyectos IT, esto significa anticipar las necesidades informativas de diferentes audiencias y comunicar proactivamente con claridad, precisión y propósito.
+            </p>
+
+            <div class="cta-box">
+                <h3>¿Te resultó útil este artículo?</h3>
+                <p>Compártelo con tu equipo y sígueme para más contenido sobre gestión de proyectos informáticos, trabajo remoto y mejores prácticas técnicas.</p>
+                <a href="#" class="btn">Compartir en LinkedIn</a>
+                <a href="#" class="btn">Compartir en Twitter</a>
+            </div>
+
+            <div class="references">
+                <h2>Referencias</h2>
+                <ol>
+                    <li>Project Management Institute. (2023). <em>Pulse of the Profession 2023: Success in Disruptive Times</em>. PMI Publications.</li>
+                    <li>Brooks, F. P. (1995). <em>The Mythical Man-Month: Essays on Software Engineering</em> (Anniversary ed.). Addison-Wesley Professional.</li>
+                    <li>Committee on Publication Ethics (COPE). (2024). <em>Guidelines on Good Publication Practice</em>. https://publicationethics.org/</li>
+                    <li>GitLab Inc. (2024). <em>GitLab Handbook: Communication Guidelines</em>. https://about.gitlab.com/handbook/communication/</li>
+                    <li>Fowler, M. (2019). <em>Architecture Decision Records</em>. Martin Fowler's Blog. https://martinfowler.com/articles/architectural-decision-records.html</li>
+                    <li>Netflix Technology Blog. (2023). <em>Communicating Architecture Decisions</em>. https://netflixtechblog.com/</li>
+                    <li>Sommerville, I., & Sawyer, P. (2021). <em>Requirements Engineering: A Good Practice Guide</em> (2.ª ed.). Wiley.</li>
+                    <li>Drucker, P. F. (2006). <em>The Effective Executive: The Definitive Guide to Getting the Right Things Done</em>. Harper Business.</li>
+                </ol>
+            </div>
+        </article>
+
+        <footer>
+            <div class="author-info">
+                <div class="avatar">GP</div>
+                <div>
+                    <strong>Gestión de Proyectos Informáticos</strong><br>
+                    <small>Estrategias, metodologías y mejores prácticas para equipos IT</small>
+                </div>
+            </div>
+            <p style="margin-top: 20px; font-size: 0.9em; opacity: 0.8;">
+                © 2025 Blog de Gestión de Proyectos Informáticos | Todos los derechos reservados
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
